@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC62EE5E1F28BAFB00247310 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62EE5C1F28BA7D00247310 /* Plane.swift */; };
+		DC62EE5F1F28BAFF00247310 /* PlaneDebugVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62EE5D1F28BA7D00247310 /* PlaneDebugVisualization.swift */; };
+		DC62EE621F28BB8F00247310 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62EE611F28BB6E00247310 /* Utilities.swift */; };
+		DC664DA41F2C2C0A0059CCB3 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2D2A741F2AFB250011AFD2 /* ARKit.framework */; };
+		DCDC74291F284C6600D080FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDC74281F284C6600D080FE /* AppDelegate.swift */; };
+		DCDC742B1F284C6600D080FE /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDC742A1F284C6600D080FE /* art.scnassets */; };
+		DCDC742D1F284C6600D080FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDC742C1F284C6600D080FE /* ViewController.swift */; };
+		DCDC74301F284C6600D080FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDC742E1F284C6600D080FE /* Main.storyboard */; };
+		DCDC74321F284C6600D080FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDC74311F284C6600D080FE /* Assets.xcassets */; };
+		DCDC74351F284C6600D080FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDC74331F284C6600D080FE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC2D2A741F2AFB250011AFD2 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		DC62EE5C1F28BA7D00247310 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		DC62EE5D1F28BA7D00247310 /* PlaneDebugVisualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDebugVisualization.swift; sourceTree = "<group>"; };
+		DC62EE611F28BB6E00247310 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DC664DA51F2C2C0F0059CCB3 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		DC8B36301F32DE6B00C5A0F8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCDC74251F284C6600D080FE /* Spiderpig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spiderpig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDC74281F284C6600D080FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCDC742A1F284C6600D080FE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		DCDC742C1F284C6600D080FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCDC742F1F284C6600D080FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCDC74311F284C6600D080FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCDC74341F284C6600D080FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCDC74361F284C6600D080FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCDC743D1F2851C300D080FE /* ARKitInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARKitInternal.h; sourceTree = "<group>"; };
+		DCDC743E1F28528C00D080FE /* Spiderpig-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spiderpig-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCDC74221F284C6600D080FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC664DA41F2C2C0A0059CCB3 /* ARKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC2D2A731F2AFB250011AFD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC664DA51F2C2C0F0059CCB3 /* Vision.framework */,
+				DC2D2A741F2AFB250011AFD2 /* ARKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC62EE5B1F28BA6C00247310 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				DC62EE5C1F28BA7D00247310 /* Plane.swift */,
+				DC62EE5D1F28BA7D00247310 /* PlaneDebugVisualization.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		DC62EE601F28BB5C00247310 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC62EE611F28BB6E00247310 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DC8B362D1F32DB8100C5A0F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCDC742A1F284C6600D080FE /* art.scnassets */,
+				DCDC74311F284C6600D080FE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC8B362E1F32DBA200C5A0F8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCDC742C1F284C6600D080FE /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DC8B362F1F32DBB500C5A0F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DCDC742E1F284C6600D080FE /* Main.storyboard */,
+				DCDC74331F284C6600D080FE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DCDC741C1F284C6600D080FE = {
+			isa = PBXGroup;
+			children = (
+				DC8B36301F32DE6B00C5A0F8 /* README.md */,
+				DCDC74271F284C6600D080FE /* Spiderpig */,
+				DCDC74261F284C6600D080FE /* Products */,
+				DC2D2A731F2AFB250011AFD2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCDC74261F284C6600D080FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCDC74251F284C6600D080FE /* Spiderpig.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCDC74271F284C6600D080FE /* Spiderpig */ = {
+			isa = PBXGroup;
+			children = (
+				DCDC74281F284C6600D080FE /* AppDelegate.swift */,
+				DCDC74361F284C6600D080FE /* Info.plist */,
+				DC62EE601F28BB5C00247310 /* Helpers */,
+				DC8B362D1F32DB8100C5A0F8 /* Resources */,
+				DCDC743C1F2851A800D080FE /* PrivateHeaders */,
+				DC8B362F1F32DBB500C5A0F8 /* Storyboards */,
+				DC62EE5B1F28BA6C00247310 /* UI Elements */,
+				DC8B362E1F32DBA200C5A0F8 /* View Controllers */,
+			);
+			path = Spiderpig;
+			sourceTree = "<group>";
+		};
+		DCDC743C1F2851A800D080FE /* PrivateHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				DCDC743D1F2851C300D080FE /* ARKitInternal.h */,
+				DCDC743E1F28528C00D080FE /* Spiderpig-Bridging-Header.h */,
+			);
+			path = PrivateHeaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCDC74241F284C6600D080FE /* Spiderpig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCDC74391F284C6600D080FE /* Build configuration list for PBXNativeTarget "Spiderpig" */;
+			buildPhases = (
+				DCDC74211F284C6600D080FE /* Sources */,
+				DCDC74221F284C6600D080FE /* Frameworks */,
+				DCDC74231F284C6600D080FE /* Resources */,
+				DC62EE4B1F287C4E00247310 /* Embed Debug Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spiderpig;
+			productName = Spiderpig;
+			productReference = DCDC74251F284C6600D080FE /* Spiderpig.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCDC741D1F284C6600D080FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Michael Thomas";
+				TargetAttributes = {
+					DCDC74241F284C6600D080FE = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = DCDC74201F284C6600D080FE /* Build configuration list for PBXProject "Spiderpig" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCDC741C1F284C6600D080FE;
+			productRefGroup = DCDC74261F284C6600D080FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCDC74241F284C6600D080FE /* Spiderpig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCDC74231F284C6600D080FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDC742B1F284C6600D080FE /* art.scnassets in Resources */,
+				DCDC74351F284C6600D080FE /* LaunchScreen.storyboard in Resources */,
+				DCDC74321F284C6600D080FE /* Assets.xcassets in Resources */,
+				DCDC74301F284C6600D080FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC62EE4B1F287C4E00247310 /* Embed Debug Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FLEX.framework",
+			);
+			name = "Embed Debug Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" == \"Debug\" ]; then\n    /usr/local/bin/carthage copy-frameworks\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCDC74211F284C6600D080FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDC742D1F284C6600D080FE /* ViewController.swift in Sources */,
+				DC62EE5F1F28BAFF00247310 /* PlaneDebugVisualization.swift in Sources */,
+				DC62EE5E1F28BAFB00247310 /* Plane.swift in Sources */,
+				DC62EE621F28BB8F00247310 /* Utilities.swift in Sources */,
+				DCDC74291F284C6600D080FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCDC742E1F284C6600D080FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCDC742F1F284C6600D080FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCDC74331F284C6600D080FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCDC74341F284C6600D080FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCDC74371F284C6600D080FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCDC74381F284C6600D080FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCDC743A1F284C6600D080FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Y62QLUGWZC;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Spiderpig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.biscuitlabs.Spiderpig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spiderpig/PrivateHeaders/Spiderpig-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCDC743B1F284C6600D080FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Y62QLUGWZC;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Spiderpig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.biscuitlabs.Spiderpig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spiderpig/PrivateHeaders/Spiderpig-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCDC74201F284C6600D080FE /* Build configuration list for PBXProject "Spiderpig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDC74371F284C6600D080FE /* Debug */,
+				DCDC74381F284C6600D080FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCDC74391F284C6600D080FE /* Build configuration list for PBXNativeTarget "Spiderpig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDC743A1F284C6600D080FE /* Debug */,
+				DCDC743B1F284C6600D080FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCDC741D1F284C6600D080FE /* Project object */;
+}
